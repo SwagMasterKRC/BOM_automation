@@ -1,1 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "bom_router"
+version = "0.1.0"
+description = "Fusion 360 BOM to vendor-specific bulk-order CSVs (McMaster-Carr, AutomationDirect)."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+bom-router = "bom_router.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

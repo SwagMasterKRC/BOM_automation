@@ -1,1 +1,17 @@
+# Output CSVs are per-run artifacts
+/output/
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
